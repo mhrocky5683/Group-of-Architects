@@ -99,3 +99,37 @@ nav li a {
     }
     
 }
+
+/* main styles */
+main{
+    max-width: 1400px ;
+    margin: 0 auto;
+}
+
+/* team style */
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-image{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 1.5rem;
+}
+.team-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+.team-title{
+    font-size: 45px;
+
+}
+
+.team-title .quick{
+    color: #727272;
+    font-weight: 500;
+}
+.team-title .text-features{
+    color: #FF900E;
+    font-weight: 700;
+}
