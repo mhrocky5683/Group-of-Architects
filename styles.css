@@ -8,6 +8,11 @@
 
 /* header styles */
 
+.Architects-title {
+    color: #FF900E;
+}
+
+
 header {
     background: rgba(255, 144, 14, 0.10);
     padding: 50px 250px;
@@ -15,11 +20,12 @@ header {
 
 /* nav-title */
 .nav-title {
-    /* font-size: 2.8rem; */
+    font-size: 2.8rem;
     font-weight: 700;
     color: #131313;
     align-items: center;
 }
+
 
 nav {
     display: flex;
@@ -35,7 +41,7 @@ nav li {
     list-style: none;
     margin-right: 30px;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 600;
 
 }
 
@@ -126,6 +132,12 @@ main {
 
 /* Some Facts */
 
+.facts-title {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+}
+
 .fact-discription {
     color: var(--Dark-03, #727272);
     font-size: 16px;
@@ -136,6 +148,7 @@ main {
 .facts-container {
     display: flex;
     justify-content: space-around;
+    padding-top: 30px;
 }
 
 .facts-container .facts-card {
@@ -162,13 +175,55 @@ main {
 
 }
 
+/* sponsors section */
+.sponsors {
+    text-align: center;
+    padding-top: 30px;
+
+}
+
+.section-title {
+    color: var(--Dark-01, #131313);
+    font-size: 45px;
+    font-weight: 700;
+
+}
+
+.text-dispriction {
+    color: var(--Dark-03, #727272);
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.sponsors-img-containet {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    margin-top: 50px;
+    gap: 40px;
+    align-items: center;
+}
+
+.sponsors-img-containet img {
+    width: 165px;
+    
+}
+
 /* responstive styles */
 /* mubile device */
 
 @media screen and (max-width: 576px) {
-    .nav-title {
+    .some-fact{
         text-align: center;
+    }
 
+
+    .nav-title {
+        font-size: 2.8rem;
+        font-weight: 700;
+        color: #131313;
+        align-items: center;
     }
 
     header {
@@ -176,7 +231,9 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .facts-container,
+    .sponsors-img-containet {
         flex-direction: column;
     }
 
@@ -190,14 +247,31 @@ main {
         padding-right: 20px;
     }
 
+    ..facts-container {
+        gap: 30px;
+    }
+
+    .team-title {
+        font-size: 45px;
+        text-align: center;
+
+    }
+
 }
+
 
 /* tablet or phn device */
 @media screen and (min-width: 576px) and (max-width: 962px) {
 
-    .nav-title {
+    .some-fact{
         text-align: center;
+    }
 
+    .nav-title {
+        /* font-size: 2.8rem; */
+        font-weight: 700;
+        color: #131313;
+        align-items: center;
     }
 
     header {
@@ -205,8 +279,17 @@ main {
     }
 
     nav,
-    .teams-container {
+    .teams-container,
+    .facts-container,
+    .sponsors-img-containet 
+    {
         flex-direction: column;
+    }
+
+    .team-title {
+        font-size: 45px;
+        text-align: center;
+
     }
 
 }
